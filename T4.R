@@ -1,4 +1,4 @@
-data <- read.csv("nba.csv",header = TRUE)
+data <- read.csv("data_folder/NBA.csv",header = TRUE)
 y <- data[,2]
 x1 <- data[,3]
 x2<- data[,4]
@@ -21,3 +21,6 @@ solve(t(X)%*%X)
 
 SSR <- SST-SSE
 MSR <- SSR/4
+
+R_square <- 1-SSR/SST
+R_square
